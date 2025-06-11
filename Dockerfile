@@ -3,7 +3,7 @@ FROM python:3.11-slim
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y curl git jq make rsync unzip wget zip && \
+    apt-get install -y curl git jq make rsync unzip wget zip iputils-ping telnet && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
